@@ -88,6 +88,7 @@ body {
     }
 
     .player_two h2 {
+		text-align: center;
         margin-top: 8px;
         margin-bottom: 22px;
     }
