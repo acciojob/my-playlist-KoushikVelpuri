@@ -17,9 +17,6 @@ h2{
     font-size: 24px;
 	margin: 5px 0 25px;
 }
-h2:nth-of-type(2){
-    text-align: center;
-}
 /* Playlist container */
 .playlist{
     background-color: rgb(255, 255, 255);
@@ -36,81 +33,81 @@ ul{
     margin: 5px 0;
 }
 
-    li {
-        list-style-type: none;
-        margin-bottom: 10px;
-        font-size: 20px;
+li{
+	list-style-type: none;
+    margin-bottom: 10px;
+	font-size: 20px;
+}
+
+a{
+	text-decoration-line: none;
+    color: black;
+}
+
+a:hover{
+	color: #555;
+}
+
+/* Main media player card */
+.player_two{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 85%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Video player */
+.player_one{
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    border-radius: 10px;
+}
+
+video{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Audio player */
+audio{
+    display: block;
+    width: 100%;
+    margin-top: 18px;
+}
+
+.song-title{
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.player_two h2{
+	text-align: center;
+    margin-top: 8px;
+    margin-bottom: 22px;
+}
+
+@media (max-width: 600px){
+	body{
+        padding: 12px;
     }
 
-    a {
-        text-decoration-line: none;
-        color: black;
+    h1{
+        font-size: 32px;
+        margin-bottom: 30px;
     }
 
-    a:hover {
-        color: #555;
-    }
-
-    /* Main media player card */
-    .player_two {
-        background-color: rgb(255, 255, 255);
-        border: 2px solid black;
-        border-radius: 10px;
+    .playlist{
+        margin: 0;
         padding: 20px;
-        width: 85%;
-        margin: 0 auto;
-        box-sizing: border-box;
     }
 
-    /* Video player */
-    .player_one {
-        background-color: rgb(255, 255, 255);
-        padding: 0;
-        border-radius: 10px;
-    }
-
-    video {
-        display: block;
+    .player_two{
         width: 100%;
-        height: auto;
+        padding: 15px;
     }
-
-    /* Audio player */
-    audio {
-        display: block;
-        width: 100%;
-        margin-top: 18px;
-    }
-
-    .song-title {
-        font-size: 16px;
-        margin-top: 25px;
-        margin-bottom: 0;
-    }
-
-    .player_two h2 {
-		text-align: center;
-        margin-top: 8px;
-        margin-bottom: 22px;
-    }
-
-    @media (max-width: 600px) {
-        body {
-            padding: 12px;
-        }
-
-        h1 {
-            font-size: 32px;
-            margin-bottom: 30px;
-        }
-
-        .playlist {
-            margin: 0;
-            padding: 20px;
-        }
-
-        .player_two {
-            width: 100%;
-            padding: 15px;
-        }
-    }
+}
